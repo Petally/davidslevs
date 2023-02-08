@@ -6,7 +6,8 @@
 body {
     font-family: "consoleFont";
     /* background image takes a little while (0.2s?) to load, so show a similiar color while it does */
-    background: #252525 url("assets/bg.png");
+    /* background: #1d1d1d url("assets/bg.png"); */
+    background: #0f0f0f;
 }
 
 h2 {
