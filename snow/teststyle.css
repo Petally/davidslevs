@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "consoleFont";
+    src: url("../assets/clacon2.ttf");
+}
+
+* {
+    font-family: "consoleFont";
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0px 0.2em black;
+}
+
+p {
+    font-size: 1.5em;
+    color: rgb(199, 199, 199);
+    line-height: 1em;
+}
+
+body {
+    background: #161616;
+}
+
+#bgSimCanvas {
+    float: left;
+    margin-right: 1%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
