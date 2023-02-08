@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "consoleFont";
+    src: url("assets/clacon2.ttf");
+}
+
+body {
+    font-family: "consoleFont";
+    /* background image takes a little while (0.2s?) to load, so show a similiar color while it does */
+    background: #252525 url("assets/bg.png");
+}
+
+h2 {
+    margin-top: 0.2em; 
+    margin-left: 0.2em;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0.2em; 
+    margin-left: 0.2em;
+    margin-bottom: 0;
+    padding: 0.1em;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    height: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px black;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav li {
+    list-style: none;
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+#nav li a:link, #nav li a:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+#body {
+    background-color: rgb(255, 255, 255);
+    min-height: 85vh;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    float: left;
+    min-height: 85vh;
+}
+
+.subtitle {
+    background-color: rgb(136, 136, 136);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.cardlist {
+    display: block;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.cardlistDiv {
+    display: inline-block;
+    width: 160px;
+    height: 200px;
+    margin: 0px 8px 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.cardlistText {
+    font-size: 14px;
+    line-height: 0.8em;
+    font-weight: normal;
+    color: #252525;
+}
+
+#footer {
+    margin: 0;
+    background-color: orange;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+
+    image-rendering: pixelated;
+
+    background-color: rgb(255, 255, 255);
+    border: 4px solid black;
+}
+
+.slidecontainer {
+    width: 85%; 
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 20px; /* Specified height */
+    background: #4d4d4d; /* Grey background */
+    outline: none; /* Remove outline */  
+}
+  
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: orange; 
+    cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: orange; 
+    cursor: pointer; /* Cursor on hover */
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

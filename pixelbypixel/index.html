@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pixels</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- container -->
+    <div id="container" style="max-width: 900px;">
+        <!-- header -->
+        <div id="header">
+            <h1 style="margin-bottom: 0; color: whitesmoke;">davecave</h1>
+            <p style="margin-top: 0; color: grey; padding: 0;">a personal site for games, toys, and experiments</p>
+            <ul id="nav" class="clearfix">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                
+            </ul>
+        </div> <!-- /header -->
+        
+        <!-- body -->
+        <div id="body" class="clearfix">
+            <div class="main">            
+                <h1 style="text-align: center; margin-bottom: 0;"><b>2D Image Rendering Performance Test</b></h1>
+                <p style="text-align: center; margin-left: 10%; margin-right: 10%; margin-bottom: 1em;">Since I'm making some things where I have to render hundreds of thousands of pixels at the same time in one frame, I tried to find a way to efficiently draw all of that using just the canvas api. This program finds a random pixel for every single one of 160,000 pixels and then draws the canvas! This is also a demonstration of how to upscale canvas's pixel-perfectly in CSS.</p>
+                <canvas id="canvas" width="400" height="400" style="width: 800px; height: 800px;"></canvas>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="160000" value="10000" class="slider" id="pixelRange">
+                </div>
+                <p id="pixelRangeText" style="margin:1em; margin-top: 0; text-align: center;">Pixels Per Frame: </p>
+                <p id="fps">FPS: </p>
+                <script src="main.js"></script>
+            </div>
+        </div> <!-- /body -->
+
+        <!-- footer -->
+        <div id="footer">
+            <p style="margin-top: 0;">© 2022 Dāvids Levs Zvirgzds</p>
+        </div> <!-- /footer -->
+    </div>
+</body>
+</html>

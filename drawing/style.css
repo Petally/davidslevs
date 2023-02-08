@@ -1,0 +1,16 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(225, 225, 225);
+    color: rgb(50, 50, 50);
+    overflow: hidden;
+    text-align:center;
+}
+
+#canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+
+    background-color: rgb(255, 255, 255);
+    border: 2px solid grey;
+}
